@@ -381,6 +381,64 @@
     margin-top:2px;
   }
 
+  /* ---------- Prominent contact CTA ---------- */
+  .contact-cta{
+    margin:14px 24px 0;
+    background:linear-gradient(135deg, var(--pine) 0%, var(--pine-dark) 100%);
+    border-radius:14px;
+    padding:10px 14px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    box-shadow:0 8px 18px -10px rgba(30,51,42,0.55);
+  }
+  .contact-cta .icon-wrap{
+    width:34px; height:34px;
+    flex-shrink:0;
+    border-radius:50%;
+    background:var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:15px;
+  }
+  .contact-cta .cta-text{
+    flex:1;
+    min-width:0;
+  }
+  .contact-cta .cta-label{
+    font-size:9.5px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color:var(--sage);
+    font-weight:700;
+    opacity:0.85;
+  }
+  .contact-cta a.cta-number{
+    display:block;
+    font-family:'Fraunces',serif;
+    font-size:15px;
+    font-weight:700;
+    color:#fff;
+    text-decoration:none;
+    margin-top:1px;
+    letter-spacing:0.01em;
+  }
+  .contact-cta .call-btn{
+    flex-shrink:0;
+    background:var(--gold);
+    color:var(--pine-dark);
+    font-weight:700;
+    font-size:11.5px;
+    padding:7px 14px;
+    border-radius:20px;
+    text-decoration:none;
+    white-space:nowrap;
+  }
+  @media (max-width:600px){
+    .contact-cta{margin:12px 18px 0; padding:9px 12px;}
+  }
+
   footer{
     text-align:center;
     padding:26px 20px;
@@ -406,10 +464,19 @@
 
 <div class="container">
   <div class="cover-container">
-    <img class="cover-image" src="https://raw.githubusercontent.com/jlsh007/Petite-Manor-Petstay-Services/refs/heads/main/IMG_20260721_095238.png" alt="Petite Manor Petstay Banner">
+    <img class="cover-image" src="https://raw.githubusercontent.com/jlsh007/Petite-Manor-Petstay-Services/refs/heads/main/boarding.png" alt="Petite Manor Petstay Banner">
     <span class="view-photos-btn">View Photos</span>
     <span class="carousel-arrow">›</span>
     <div class="carousel-dots"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  </div>
+
+  <div class="contact-cta">
+    <div class="icon-wrap">📞</div>
+    <div class="cta-text">
+      <span class="cta-label">Call or WhatsApp Lily</span>
+      <a class="cta-number" href="tel:0182656089">018-265 6089</a>
+    </div>
+    <a class="call-btn" href="tel:0182656089">Call Now</a>
   </div>
 
   <div class="paw-trail"></div>
@@ -467,7 +534,6 @@
     </ul>
 
     <div class="details-grid">
-      <div class="detail-item"><strong>📞 Contact Number</strong>018-265 6089</div>
       <div class="detail-item"><strong>Max Pets Watched</strong>3 Pets at a time</div>
       <div class="detail-item"><strong>🐕 Accepted Pet Types &amp; Size</strong>Dogs (1-5kg, 5-10kg)</div>
       <div class="detail-item"><strong>🧍‍♀️🐕 Supervision Level</strong>Unsupervised max 1 - 2 hours</div>
